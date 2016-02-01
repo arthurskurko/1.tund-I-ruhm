@@ -5,9 +5,8 @@
   <title>Document</title>
 </head>
 <body>
-Eesnimi:<input type="text" id="first-name"><br>
-Perekonnanimi:<input type="text" id="last-name">
-<input type="submit" value="Tervita" onclick="welcome()">
+Eesnimi:<input type="text" id="first-name" onkeyup="welcome()"><br>
+Perekonnanimi:<input type="text" id="last-name" onkeyup="welcome()">
 
 <div id="output">
 
@@ -27,7 +26,7 @@ Perekonnanimi:<input type="text" id="last-name">
 
 
           console.log(first_name + ' ' + last_name);
-          document.getElementById("output").innerHTML = "<h1>tere</h1>" +first_name+ "" +last_name;
+          document.getElementById("output").innerHTML = "<b>tere</b>" +first_name+ " " +last_name;
 
   }
 
