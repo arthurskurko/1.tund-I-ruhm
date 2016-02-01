@@ -7,7 +7,11 @@
 <body>
 Eesnimi:<input type="text" id="first-name"><br>
 Perekonnanimi:<input type="text" id="last-name">
-<input type="submit" value="Tervita">
+<input type="submit" value="Tervita" onclick="welcome()">
+
+<div id="output">
+
+</div>
 
 <script>
 
@@ -22,7 +26,8 @@ Perekonnanimi:<input type="text" id="last-name">
           last_name = document.getElementById('last-name').value;
 
 
-          console.log(first_name + ' ' + last_name)
+          console.log(first_name + ' ' + last_name);
+          document.getElementById("output").innerHTML = "<h1>tere</h1>" +first_name+ "" +last_name;
 
   }
 
