@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style>
+    .box{
+      width:400px;
+      text-align:right;
+    }
+  </style>
 </head>
 <body>
-Eesnimi:<input type="text" id="first-name" onkeyup="welcome()"><br>
-Perekonnanimi:<input type="text" id="last-name" onkeyup="welcome()">
+  <div class="box">
+    Eesnimi:<input type="text" id="first-name" onkeyup="welcome()"><br>
+    Perekonnanimi:<input type="text" id="last-name" onkeyup="welcome()">
+  </div>
 
 <div id="output">
 
@@ -26,7 +34,7 @@ Perekonnanimi:<input type="text" id="last-name" onkeyup="welcome()">
 
 
           console.log(first_name + ' ' + last_name);
-          document.getElementById("output").innerHTML = "<b>tere</b>" +first_name+ " " +last_name;
+          document.getElementById("output").innerHTML = "<b>tere </b>" +first_name+ " " +last_name;
 
   }
 
